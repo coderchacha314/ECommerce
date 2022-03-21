@@ -1,0 +1,48 @@
+<div class="container" *ngIf="true">
+    <div class="card">
+<table class="table table-bordered">
+    <thead>
+    <tr>
+    <th>Sr.No</th>
+    <th>Product Name</th>
+    <th>Product Image</th>
+    <th>Description</th>
+    <th>Price($)</th>
+    <th>Quantity</th>
+    <th>Total</th>
+    <th>Action</th>
+</tr>
+</thead>
+<tbody>
+    <tr *ngFor="let list of purchaseCartList">
+        <td>{{list.id}}</td>
+        <td>{{list.title}}</td>
+        <td><img src="{{list.image}}"   width="200" height="200" alt=""></td>
+        <td>{{list.description}}</td>
+        <td>{{list.price}}</td>
+        <td>1</td>
+        <td>1</td>
+        <td><button class="btn btn-danger" (click)="Deletefromcart(list)"><i class="fas fa-trash"></i></button></td>
+    </tr>
+</tbody>
+</table>
+    </div>
+</div>
+
+
+
+
+
+<div class="container" *ngIf="false">
+    <div class="card">
+        <div class="card-title">
+
+        </div>
+        <div class="center">
+            <img src="" alt="">
+            <h5>Your Cart is Empty</h5>
+            <h6>Add item to Cart</h6>
+            <button class="btn btn-primary" (click)="NavtoProduct()">Shop Now</button>
+        </div>
+    </div>
+</div>

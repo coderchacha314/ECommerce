@@ -1,0 +1,15 @@
+<header>
+<div class="navbar bg-primary shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+        <i class="fas fa-shipping-fast" (click)="NavtoProduct()"></i> &nbsp;
+        <strong>E-Commerce</strong>
+       <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search Product">
+       </div>
+       <span class="fas fa-search search-icon"></span>
+    </div>
+    <button class="btn btn-primary" (click)="NavtoCart()" ><i class="fas fa-cart-plus"></i><div class="badge bg-danger">{{cartLength}}</div>
+    </button>
+</div>
+
+</header>
